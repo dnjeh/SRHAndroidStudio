@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="기준"
+        android:textSize="30sp"
+        android:id="@+id/base"
+        android:layout_centerInParent="true"
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/base"
+        android:text="4"
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/base"
+        android:text="3"
+        ></Button>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/base"
+        android:text="2"
+        ></Button>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/base"
+        android:text="1"
+        ></Button>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/base"
+        android:layout_alignParentBottom="true"
+        android:text="5"
+        ></Button>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/base"
+        android:layout_alignParentBottom="true"
+        android:text="6"
+        ></Button>
+</RelativeLayout>
