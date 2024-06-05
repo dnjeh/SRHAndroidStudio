@@ -23,5 +23,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/nextButton"></EditText>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="결과값"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:id="@+id/mainResultTextView"
+        />
 
+    <Button
+        android:id="@+id/dialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="전화 걸기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainResultTextView"></Button>
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="구글 맵"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialButton"></Button>
+
+    <Button
+        android:id="@+id/smsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SMS보내기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapButton"></Button>
 </androidx.constraintlayout.widget.ConstraintLayout>

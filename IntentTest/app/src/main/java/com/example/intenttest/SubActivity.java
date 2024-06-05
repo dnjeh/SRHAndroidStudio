@@ -20,13 +20,17 @@ public class SubActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra("message");
-        int num intent.getIntExtra("number", 0);
+        int num = intent.getIntExtra("number", 0);
 
         resultTextView.setText("문자열" + message + ",숫자:" + num);
 
         prevButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent1 = getIntent();
+                intent1.putExtra("result", "성공!");
+                setResult(RESULT_OK, intent1);
+
                 finish();
             }
         });
