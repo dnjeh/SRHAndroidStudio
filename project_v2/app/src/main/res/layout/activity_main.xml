@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하겠습니까?" />
+
+    <Switch
+        android:id="@+id/SwitchAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작함" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 포켓몬은?"
+        android:visibility="invisible" />
+
+    <RadioGroup
+        android:id="@+id/Rgroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/RdoPikachu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피카츄" />
+
+        <RadioButton
+            android:id="@+id/RdoJammanbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠만보" />
+
+        <RadioButton
+            android:id="@+id/RdoFairy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파이리" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/BtnFinish"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/BtnBack"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="처음으로"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imgPokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+
+</LinearLayout>
